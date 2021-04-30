@@ -16,16 +16,22 @@
 
 ### 🏠 [Homepage](https://github.com/brandinos/CometCSS)
 
-## Install
+## Usage
+
+```sh
+git clone https://github.com/brandinos/CometCSS.git
+```
+
+```sh
+cd cometCSS
+```
 
 ```sh
 npm install
 ```
 
-## Run tests
-
 ```sh
-npm run test
+npm run sass
 ```
 
 ## Author
