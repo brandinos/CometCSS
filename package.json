@@ -1,0 +1,32 @@
+{
+  "name": "cometcss",
+  "version": "1.0.0",
+  "description": "CometCSS classes css framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch css:css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandinos/CometCSS.git"
+  },
+  "keywords": [
+    "css",
+    "css",
+    "framework",
+    "css",
+    "classles",
+    "framework",
+    "css",
+    "boilerplate"
+  ],
+  "author": "Brandinos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandinos/CometCSS/issues"
+  },
+  "homepage": "https://github.com/brandinos/CometCSS#readme",
+  "dependencies": {
+    "readme-md-generator": "^1.0.0"
+  }
+}
