@@ -4,7 +4,7 @@
   "description": "CometCSS classes css framework",
   "main": "index.js",
   "scripts": {
-    "test": "sass --watch css:css --style compressed"
+    "sass": "sass --watch css:css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
   "homepage": "https://github.com/brandinos/CometCSS#readme",
   "dependencies": {
     "readme-md-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.32.12"
   }
 }
