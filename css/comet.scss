@@ -1,0 +1,204 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * These are global vars used to specify stuff like colors.
+ * Change these to your own needs.
+ * The advantage is that you only need to change a single vallue
+ * to apply it on all elements where it is used :) 
+ */
+$colorPrimary: #f93854;
+$boxShadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$fontStack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$fontDefault: 1.125rem; /* 18px */
+$fontSmall: 1rem; /* 16px wich is browser default size */
+
+html {
+  font-family: $fontStack;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: $fontDefault;
+  /* We don't want to see the horizontal scroll bar */
+  overflow-x: hidden;
+  color: #555;
+  background-color: #fff;
+  /* Antialiased fonts for better appearance */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0 3px 5px rgba (0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+body {
+  /* Creates more space bewteen screen edges */
+  padding: 4rem 1rem;
+}
+
+main {
+  /* The main elements functions as a reponsive container wich holds all content */
+  /* Use relative position to use pixel perfect positioning with absolute elements */
+  position: relative;
+  /* Not wider than 70 characters for lesser eye strain */
+  max-width: 70ch;
+  /* Aligin container horizontaly */
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  /* Better contrast beteen page text */
+  color: #333;
+  margin-bottom: 0.3rem;
+  margin-top: 2rem;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 0;
+}
+p {
+  margin-top: 0;
+}
+
+a {
+  color: $colorPrimary;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: $colorPrimary;
+  color: #fff;
+  font-family: $fontStack;
+  font-size: $fontSmall;
+  text-decoration: none;
+  padding: 10px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  /* Dont select text, this can happen on repeated button clicks */
+  user-select: none;
+  /* Never show text on two lines */
+  white-space: nowrap;
+  &:hover {
+    box-shadow: $boxShadow;
+  }
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+ul {
+  list-style: circle inside;
+}
+ol {
+  list-style: decimal inside;
+}
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+li {
+  margin-bottom: 1rem;
+}
+
+code {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 80%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  color: inherit;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+blockquote {
+  margin: 0;
+  border-left: 2px solid $colorPrimary;
+  padding: 0 0 0 2rem;
+  opacity: 0.8;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+img,
+video {
+  border: none;
+  /* Make this elements responsive */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Spacing */
+button,
+.button {
+  margin-bottom: 1rem;
+}
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 1.5rem;
+}
